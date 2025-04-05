@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TinDog</title>
+  <title>CPA</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
@@ -12,9 +12,90 @@
 
 <body>
 
-  <!-- Title -->
-  <section id="title">
-
+  <!-- Side Bar -->
+  <section id="Side_Bar">
+    <div class="flex-shrink-0 p-3" style="width: 280px;">
+      <a href="/"
+        class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom docs-creator">
+        <svg class="bi pe-none me-2" width="30" height="24" aria-hidden="true">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+        <span class="fs-5 fw-semibold">Collapsible</span>
+      </a>
+      <ul class="list-unstyled ps-0">
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse"
+            data-bs-target="#home-collapse" aria-expanded="true">
+            Home
+          </button>
+          <div class="collapse show" id="home-collapse" style="">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#"
+                  class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Overview</a></li>
+              <li><a href="#"
+                  class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Updates</a></li>
+              <li><a href="#"
+                  class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Reports</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse"
+            data-bs-target="#dashboard-collapse" aria-expanded="true">
+            Dashboard
+          </button>
+          <div class="collapse show" id="dashboard-collapse" style="">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#"
+                  class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Overview</a></li>
+              <li><a href="#"
+                  class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Weekly</a></li>
+              <li><a href="#"
+                  class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Monthly</a></li>
+              <li><a href="#"
+                  class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Annually</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse"
+            data-bs-target="#orders-collapse" aria-expanded="true">
+            Orders
+          </button>
+          <div class="collapse show" id="orders-collapse" style="">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">New</a>
+              </li>
+              <li><a href="#"
+                  class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Processed</a></li>
+              <li><a href="#"
+                  class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Shipped</a></li>
+              <li><a href="#"
+                  class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Returned</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="border-top my-3"></li>
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+            data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+            Account
+          </button>
+          <div class="collapse" id="account-collapse" style="">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#"
+                  class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">New...</a></li>
+              <li><a href="#"
+                  class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Profile</a></li>
+              <li><a href="#"
+                  class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Settings</a></li>
+              <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Sign
+                  out</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
   </section>
   <!-- Features -->
   <section id="features">
