@@ -29,24 +29,21 @@
           <li><a href="#" class="nav-link px-2 link-body-emphasis docs-creator">Listagem</a></li>
         </ul>
 
-        <div class="dropdown text-end mt-2 px-2">
-          <a href="#" class="d-block link-body-emphasis text-decoration-none docs-creator" data-bs-toggle="dropdown"
-            aria-expanded="false">
+        <div class="dropdown">
+          <button class="feature-icon" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-list"
               viewBox="0 0 16 16">
               <path fill-rule="evenodd"
                 d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
             </svg>
-          </a>
 
-          <ul class="dropdown-menu text-small">
-            <li><a class="dropdown-item docs-creator" href="#">New project...</a></li>
-            <li><a class="dropdown-item docs-creator" href="#">Settings</a></li>
-            <li><a class="dropdown-item docs-creator" href="#">Profile</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item docs-creator" href="#">Sign out</a></li>
+          </button>
+
+          <ul class="dropdown-menu">
+            <li><button class="dropdown-item" type="button">Action</button></li>
+            <li><button class="dropdown-item" type="button">Another action</button></li>
+            <li><button class="dropdown-item" type="button">Sign out</button></li>
           </ul>
         </div>
       </div>
@@ -56,88 +53,77 @@
 
   <!-- sidebar -->
   <section id="sidebar">
-    <div class="flex-shrink-0 p-3" style="width: 280px;">
-      <a href="/"
-        class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom docs-creator">
-        <svg class="bi pe-none me-2" width="20" height="24" aria-hidden="true">
-        </svg>
-        <span class="fs-5 fw-semibold">Sistema de Apoio à Cadeia Produtiva Animal</span>
-      </a>
-      <ul class="list-unstyled ps-0">
-        <li class="mb-1">
-          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse"
-            data-bs-target="#home-collapse" aria-expanded="true">
-            Home
-          </button>
-          <div class="collapse show" id="home-collapse" style="">
-            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-              <li><a href="#"
-                  class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Overview</a></li>
-              <li><a href="#"
-                  class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Updates</a></li>
-              <li><a href="#"
-                  class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Reports</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="mb-1">
-          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse"
-            data-bs-target="#dashboard-collapse" aria-expanded="true">
-            Dashboard
-          </button>
-          <div class="collapse show" id="dashboard-collapse" style="">
-            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-              <li><a href="#"
-                  class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Overview</a></li>
-              <li><a href="#"
-                  class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Weekly</a></li>
-              <li><a href="#"
-                  class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Monthly</a></li>
-              <li><a href="#"
-                  class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Annually</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="mb-1">
-          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse"
-            data-bs-target="#orders-collapse" aria-expanded="true">
-            Orders
-          </button>
-          <div class="collapse show" id="orders-collapse" style="">
-            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-              <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">New</a>
-              </li>
-              <li><a href="#"
-                  class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Processed</a></li>
-              <li><a href="#"
-                  class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Shipped</a></li>
-              <li><a href="#"
-                  class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Returned</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="border-top my-3"></li>
-        <li class="mb-1">
-          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-            data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-            Account
-          </button>
-          <div class="collapse" id="account-collapse" style="">
-            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-              <li><a href="#"
-                  class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">New...</a></li>
-              <li><a href="#"
-                  class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Profile</a></li>
-              <li><a href="#"
-                  class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Settings</a></li>
-              <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Sign
-                  out</a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
+    <div class="container-fluid">
+
+      <div class="flex-shrink-0 p-4" style="width: 280px;">
+        <a href="/"
+          class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom docs-creator">
+          <svg class="bi pe-none me-2" width="20" height="24" aria-hidden="true">
+          </svg>
+          <span class="fs-5 fw-semibold">Sistema - CPA<p class="h6 fw-semibold">Cadeia Produtiva Animal</p> </span>
+        </a>
+        <ul class="list-unstyled ps-0">
+          <li class="mb-1">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse"
+              data-bs-target="#home-collapse" aria-expanded="true">
+              Home
+            </button>
+            <div class="collapse show" id="home-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#"
+                    class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Overview</a></li>
+                <li><a href="#"
+                    class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Updates</a></li>
+                <li><a href="#"
+                    class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Reports</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="mb-1">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse"
+              data-bs-target="#dashboard-collapse" aria-expanded="true">
+              Dashboard
+            </button>
+            <div class="collapse show" id="dashboard-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#"
+                    class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Overview</a></li>
+                <li><a href="#"
+                    class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Weekly</a></li>
+                <li><a href="#"
+                    class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Monthly</a></li>
+                <li><a href="#"
+                    class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Annually</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="mb-1">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse"
+              data-bs-target="#orders-collapse" aria-expanded="true">
+              Orders
+            </button>
+            <div class="collapse show" id="orders-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#"
+                    class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">New</a>
+                </li>
+                <li><a href="#"
+                    class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Processed</a>
+                </li>
+                <li><a href="#"
+                    class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Shipped</a></li>
+                <li><a href="#"
+                    class="link-body-emphasis d-inline-flex text-decoration-none rounded docs-creator">Returned</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="border-top my-3"></li>
+        </ul>
+      </div>
+
     </div>
   </section>
+
   <!-- Features -->
   <section id="features">
 

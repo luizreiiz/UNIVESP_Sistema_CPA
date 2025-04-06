@@ -70,6 +70,22 @@ main {
 /* color palette */
 /* #66d2ce #2daa9e #eaeaea #e3d2c3 #ff9149  */
 
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #66d2ce;
+  border-radius: 0.75rem;
+  border-style: none;
+  margin: auto 10px;
+}
+
+.dropdown-menu > li > button:active {
+  background-color: #ff9149;
+}
+
 #navbar {
   background-color: #2daa9e;
   height: 100px;
