@@ -68,7 +68,7 @@ main {
 /* customization */
 
 /* color palette */
-/* #66d2ce #2daa9e #eaeaea #e3d2c3 #ff9149  */
+/*  #9ee6de #66d2ce #2daa9e #eaeaea #e3d2c3 #ff9149  */
 
 .feature-icon {
   display: inline-flex;
@@ -76,7 +76,7 @@ main {
   justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: #66d2ce;
+  background-color: #9ee6de;
   border-radius: 0.75rem;
   border-style: none;
   margin: auto 10px;
@@ -87,7 +87,7 @@ main {
 }
 
 #navbar {
-  background-color: #2daa9e;
+  background-color: #66d2ce;
   height: 100px;
 }
 
