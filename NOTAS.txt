@@ -1,0 +1,46 @@
+BANCO DE DADOS
+        'USER': 'alunos',
+        'PASSWORD': 'univesp',
+
+
+
+
+# comandos + atalhos
+
+ctrl + c - pára aplicação
+ctrl + L - limpa terminal
+
+
+# comandos
+python -m venv .venv - instala ambiente virtual
+.\.venv\Scripts\activate - ativa ambiente virtual
+
+pip install -r requirements.txt - instala requirements a partir do path
+
+python manage.py - lista série de comandos que podem ser executados.
+
+python manage.py runserver - roda projeto django
+django-admin startapp core - cria / inicia um app (aproveitável entre aplicações)
+python manage.py makemigrations - lê as aplicações em settings.py e cria migrations a partir das models + aplicações do django
+python manage.py migrate - executa a migração
+python manage.py shell - chama o prompt do Django
+
+
+python manage.py createsuperuser - Cria usuário para sistema de administração
+# user fusion - senha fusion -
+
+# ERROS
+Server error (500) - servidor tentou processar algo e não conseguiu
+
+
+## Heroku
+
+git add .
+git commit -m 'msg'
+heroku login - faz login no sistema do heroku
+heroku create django1-pi3-univesp --buildpack heroku/python   -- informa o builpack
+git push heroku master  -- publica no heroku
+
+https://django1-pi3-univesp-a201091e9558.herokuapp.com/
+
+
