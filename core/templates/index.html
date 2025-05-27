@@ -111,85 +111,52 @@
 
       .content-section {
         background-color: rgb(235, 235, 235);
-        height: 93vh;
+        height: auto;
         border-radius: 8px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         padding: 25px;
       }
 
       .content-title {
-        font-size: 20px;
-        font-weight: 500;
-        margin-bottom: 20px;
-        color: #15aa9b; /* Mesmo verde da sidebar */
-      }
-
-      /* Chart */
-      .chart-container {
-        display: flex;
-        margin-top: 20px;
-      }
-
-      .chart-values {
-        display: flex;
-        flex-direction: column-reverse;
-        margin-right: 15px;
-        text-align: right;
-        color: #3e4041;
-        font-size: 14px;
-      }
-
-      .chart-values div {
-        margin-bottom: 18px;
-      }
-
-      .chart-days {
-        flex: 1;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        border-left: 1px solid #eee;
-        border-bottom: 1px solid #eee;
-        padding-left: 15px;
-        padding-bottom: 5px;
-        min-height: 300px;
-      }
-
-      .chart-days div {
-        width: 14%;
+        margin: 40px;
         text-align: center;
-        color: #3e4041;
-        font-size: 14px;
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #26a397; /* Mesmo verde da sidebar */
       }
 
-      /* Table */
-      .traco-tabela {
-        height: 50px;
-        width: 50px;
-        border: solid 1px rgba(255, 255, 255, 0.1);
+      .content-section p {
+        border-radius: 8px;
+        padding: 50px;
+        font-size: large;
+        color: #353635;
+        text-align: justify;
+        word-spacing: 5px;
+        line-height: 35px;
       }
 
-      .data-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 15px;
-      }
-
-      .data-table th,
-      .data-table td {
-        padding: 12px 15px;
-        text-align: left;
-        border-bottom: 1px solid #eee;
-      }
-
-      .data-table th {
-        background-color: #f8f9fa;
-        color: #1a6b2d; /* Verde da estância */
+      .quotation {
         font-weight: 500;
+        font-style: italic;
       }
 
-      .data-table tr:hover {
-        background-color: #f8f9fa;
+      .containerimg {
+        justify-self: center;
+        width: 800px;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .img {
+        display: flex;
+        justify-self: center;
+        width: 800px;
+      }
+
+      footer {
+        display: flex;
+        padding: 0;
+        justify-content: center;
       }
 
       /* Efeitos adicionais */
@@ -204,7 +171,6 @@
     <div class="container">
       <!-- Sidebar -->
       <div class="sidebar">
-
         <div class="box-logo">
           <img src="{% static 'images/fig1.png' %}" width="200" height="200" />
         </div>
@@ -237,12 +203,59 @@
       <!-- Main Content -->
       <div class="main-content">
         <div class="content-section">
-          <h1 class="content-title">Painel</h1>
-          <div class="chart-container">
-            <!-- #### inserir gráfico aqui #### -->
-
-
-
+          <h1 class="content-title">
+            Estância Triângulo - Tradição Familiar, Bem-Estar Animal e Genética
+            de Excelência há Mais de 50 Anos
+          </h1>
+          <div>
+            <p>
+              Com mais de cinco décadas de dedicação à pecuária, a Estância
+              Triângulo é um exemplo de tradição, inovação e compromisso com a
+              qualidade. Negócio familiar passado de geração em geração, nossa
+              fazenda é especializada na criação e comercialização de touros e
+              matrizes Nelore Mocha, com genética reconhecida por sua
+              performance, rusticidade e docilidade. Nossa trajetória é guiada
+              por valores sólidos: respeito à terra, cuidado com os animais e
+              responsabilidade com o futuro.
+            </p>
+            <div class="containerimg">
+              <img
+                class="img"
+                src="{% static 'images/e_triangulo.jpg' %}"
+                alt=""
+              />
+            </div>
+            <p class="quotation">
+              "Investimos continuamente em tecnologia, manejo sustentável e
+              bem-estar animal, garantindo um ambiente saudável e equilibrado,
+              onde os bovinos se desenvolvem com qualidade de vida, conforto e
+              atenção às suas necessidades naturais. Esse cuidado reflete
+              diretamente na qualidade dos nossos animais."
+            </p>
+            <div class="containerimg">
+              <img
+                class="img"
+                src="{% static 'images/e_triangulo2.jpg' %}"
+                alt=""
+              />
+            </div>
+            <p>
+              A Estância Triângulo oferece ao mercado reprodutores e matrizes
+              com alto padrão genético, adaptados às condições do campo e
+              prontos para agregar valor à pecuária de corte em todo o Brasil.
+              Mais do que uma fazenda, somos um legado construído com paixão,
+              respeito e trabalho ao longo de gerações. Aqui, cada decisão é
+              tomada com consciência e visão de longo prazo, sempre pensando em
+              entregar genética confiável, animais saudáveis e resultados
+              consistentes para nossos parceiros.
+            </p>
+            <p>
+              Geração após geração, criando com responsabilidade, respeito e
+              excelência.
+            </p>
+            <footer>
+              <p>Estância Triângulo &copy;</p>
+            </footer>
           </div>
         </div>
       </div>
